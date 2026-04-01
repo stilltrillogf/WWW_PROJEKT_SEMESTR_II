@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferty Pracy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portal Ofert Pracy</h1>
+        <p>Znajdź pracę dla siebie — szybko, wygodnie i przejrzyście</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Jakiej pracy szukasz?">
+            <input type="text" placeholder="Lokalizacja">
+            <select>
+                <option>Wszystkie kategorie</option>
+                <option>IT</option>
+                <option>Marketing</option>
+                <option>Sprzedaż</option>
+                <option>Finanse</option>
+                <option>Obsługa klienta</option>
+            </select>
+            <button>Szukaj</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="filters">
+            <h2>Filtry</h2>
+
+            <div class="filter-group">
+                <label for="job-type">Rodzaj pracy</label>
+                <select id="job-type">
+                    <option>Dowolny</option>
+                    <option>Pełny etat</option>
+                    <option>Pół etatu</option>
+                    <option>Zdalna</option>
+                    <option>Praktyki</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="salary">Wynagrodzenie od</label>
+                <input type="number" id="salary" placeholder="np. 5000">
+            </div>
+
+            <div class="filter-group">
+                <label for="experience">Doświadczenie</label>
+                <select id="experience">
+                    <option>Dowolne</option>
+                    <option>Junior</option>
+                    <option>Mid</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="job-list">
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <div class="company">TechSoft Sp. z o.o.</div>
+                <div class="location">📍 Warszawa</div>
+                <div class="salary">💰 8000 - 12000 zł</div>
+                <div class="type">🕒 Pełny etat</div>
+                <div class="phone">📞 512345678</div>
+                <p>Poszukujemy osoby do tworzenia nowoczesnych interfejsów użytkownika w HTML, CSS i JavaScript.</p>
+                <button>Zobacz ofertę</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Specjalista ds. Marketingu</h3>
+                <div class="company">Bright Media</div>
+                <div class="location">📍 Kraków</div>
+                <div class="salary">💰 6000 - 8500 zł</div>
+                <div class="type">🕒 Pełny etat</div>
+                <div class="phone">📞 698123456</div>
+                <p>Tworzenie kampanii reklamowych, prowadzenie social media i analiza wyników działań marketingowych.</p>
+                <button>Zobacz ofertę</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Pracownik Obsługi Klienta</h3>
+                <div class="company">HelpLine Polska</div>
+                <div class="location">📍 Zdalnie</div>
+                <div class="salary">💰 4500 - 6000 zł</div>
+                <div class="type">🕒 Zdalna</div>
+                <div class="phone">📞 723456789</div>
+                <p>Obsługa zapytań klientów mailowo i telefonicznie oraz wsparcie w rozwiązywaniu bieżących problemów.</p>
+                <button>Zobacz ofertę</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Junior Java Developer</h3>
+                <div class="company">CodeStart</div>
+                <div class="location">📍 Gdańsk</div>
+                <div class="salary">💰 7000 - 9000 zł</div>
+                <div class="type">🕒 Pełny etat</div>
+                <div class="phone">📞 601234987</div>
+                <p>Oferta dla osób rozpoczynających karierę w programowaniu. Mile widziana znajomość Java i SQL.</p>
+                <button>Zobacz ofertę</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Analityk Danych</h3>
+                <div class="company">DataVision</div>
+                <div class="location">📍 Wrocław</div>
+                <div class="salary">💰 9000 - 13000 zł</div>
+                <div class="type">🕒 Hybrydowa</div>
+                <div class="phone">📞 534987321</div>
+                <p>Analiza danych biznesowych, raportowanie i tworzenie dashboardów wspierających decyzje firmy.</p>
+                <button>Zobacz ofertę</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Grafik Komputerowy</h3>
+                <div class="company">Creative Studio</div>
+                <div class="location">📍 Poznań</div>
+                <div class="salary">💰 5000 - 7500 zł</div>
+                <div class="type">🕒 Pół etatu</div>
+                <div class="phone">📞 789456123</div>
+                <p>Tworzenie materiałów reklamowych, grafik do internetu i projektów wizualnych dla klientów.</p>
+                <button>Zobacz ofertę</button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
