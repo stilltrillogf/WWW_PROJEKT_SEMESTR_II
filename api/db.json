@@ -1,0 +1,541 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Frontend Developer",
+      "company": "TechSoft Sp. z o.o.",
+      "location": "Warszawa",
+      "salary": 10000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "mid",
+      "phone": "512345678",
+      "description": "Poszukujemy osoby do tworzenia nowoczesnych interfejsów użytkownika w HTML, CSS i JavaScript. Praca w zwinnym zespole.",
+      "requirements": [
+        "HTML5/CSS3",
+        "JavaScript (ES6+)",
+        "React lub Vue"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Specjalista ds. Marketingu",
+      "company": "Bright Media",
+      "location": "Kraków",
+      "salary": 7000,
+      "type": "Pełny etat",
+      "category": "marketing",
+      "experience": "mid",
+      "phone": "698123456",
+      "description": "Tworzenie kampanii reklamowych, prowadzenie social media i analiza wyników działań marketingowych.",
+      "requirements": [
+        "SEO/SEM",
+        "Copywriting",
+        "Google Analytics"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Pracownik Obsługi Klienta",
+      "company": "HelpLine Polska",
+      "location": "Zdalna",
+      "salary": 5000,
+      "type": "Zdalna",
+      "category": "obsluga-klienta",
+      "experience": "junior",
+      "phone": "723456789",
+      "description": "Obsługa zapytań klientów mailowo i telefonicznie oraz wsparcie w rozwiązywaniu bieżących problemów.",
+      "requirements": [
+        "Komunikatywność",
+        "Cierpliwość",
+        "Podstawy obsługi komputera"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Junior Java Developer",
+      "company": "CodeStart",
+      "location": "Gdańsk",
+      "salary": 8000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "junior",
+      "phone": "601234987",
+      "description": "Oferta dla osób rozpoczynających karierę w programowaniu. Dołącz do naszego zespołu backendowego.",
+      "requirements": [
+        "Java 11+",
+        "Podstawy SQL",
+        "Chęć do nauki"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Senior UX/UI Designer",
+      "company": "Creative Minds",
+      "location": "Wrocław",
+      "salary": 14000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "senior",
+      "phone": "505111222",
+      "description": "Szukamy doświadczonego designera, który weźmie odpowiedzialność za makietowanie i projektowanie naszych kluczowych produktów.",
+      "requirements": [
+        "Figma",
+        "Doświadczenie w badaniach UX",
+        "Portfolio"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Copywriter SEO",
+      "company": "SłowoWSieci",
+      "location": "Zdalna",
+      "salary": 4500,
+      "type": "Pół etatu",
+      "category": "marketing",
+      "experience": "junior",
+      "phone": "606222333",
+      "description": "Pisanie artykułów blogowych, opisów produktów i tekstów zapleczowych z uwzględnieniem zasad SEO.",
+      "requirements": [
+        "Lekkie pióro",
+        "Podstawy SEO",
+        "Terminowość"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Kierownik Zespołu Wsparcia",
+      "company": "TechCare",
+      "location": "Poznań",
+      "salary": 9000,
+      "type": "Pełny etat",
+      "category": "obsluga-klienta",
+      "experience": "senior",
+      "phone": "707333444",
+      "description": "Zarządzanie 10-osobowym zespołem konsultantów, dbanie o wskaźniki SLA i rozwój pracowników.",
+      "requirements": [
+        "Zarządzanie zespołem",
+        "Angielski C1",
+        "Znajomość systemów ticketowych"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "DevOps Engineer",
+      "company": "CloudSys",
+      "location": "Zdalna",
+      "salary": 18000,
+      "type": "Zdalna",
+      "category": "it",
+      "experience": "mid",
+      "phone": "808444555",
+      "description": "Utrzymanie infrastruktury chmurowej, automatyzacja wdrożeń i dbanie o bezpieczeństwo systemów.",
+      "requirements": [
+        "AWS / Azure",
+        "Docker & Kubernetes",
+        "CI/CD"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Social Media Ninja",
+      "company": "ViralAgency",
+      "location": "Warszawa",
+      "salary": 6000,
+      "type": "Pełny etat",
+      "category": "marketing",
+      "experience": "mid",
+      "phone": "909555666",
+      "description": "Prowadzenie profili na TikToku, Instagramie i LinkedInie. Tworzenie angażującego contentu wideo.",
+      "requirements": [
+        "Znajomość trendów",
+        "Montaż wideo (CapCut/Premiere)",
+        "Kreatywność"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Specjalista ds. Reklamacji",
+      "company": "e-Shopper",
+      "location": "Łódź",
+      "salary": 4800,
+      "type": "Pełny etat",
+      "category": "obsluga-klienta",
+      "experience": "mid",
+      "phone": "515666777",
+      "description": "Rozpatrywanie zgłoszeń reklamacyjnych klientów sklepu internetowego oraz kontakt z działem logistyki.",
+      "requirements": [
+        "Znajomość praw konsumenta",
+        "Empatia",
+        "Odporność na stres"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Data Analyst",
+      "company": "FinTech Innovations",
+      "location": "Kraków",
+      "salary": 11000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "mid",
+      "phone": "616777888",
+      "description": "Analiza dużych zbiorów danych finansowych, tworzenie raportów i dashboardów dla zarządu.",
+      "requirements": [
+        "SQL",
+        "Python (Pandas)",
+        "Tableau / PowerBI"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Performance Marketing Specialist",
+      "company": "Growth Masters",
+      "location": "Zdalna",
+      "salary": 8500,
+      "type": "Zdalna",
+      "category": "marketing",
+      "experience": "mid",
+      "phone": "717888999",
+      "description": "Zarządzanie budżetami reklamowymi w Google Ads i Meta Ads. Optymalizacja konwersji (CRO).",
+      "requirements": [
+        "Google Ads",
+        "Meta Ads",
+        "Analityczne myślenie"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Asystent/ka Działu Obsługi",
+      "company": "BiuroPlus",
+      "location": "Gdańsk",
+      "salary": 4200,
+      "type": "Pół etatu",
+      "category": "obsluga-klienta",
+      "experience": "junior",
+      "phone": "818999000",
+      "description": "Wsparcie starszych konsultantów w pracach administracyjnych i wprowadzaniu danych do systemu CRM.",
+      "requirements": [
+        "Dokładność",
+        "Dobra organizacja pracy",
+        "Znajomość MS Office"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Backend Python Developer",
+      "company": "AI Solutions",
+      "location": "Warszawa",
+      "salary": 15000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "senior",
+      "phone": "919000111",
+      "description": "Projektowanie i wdrażanie skalowalnych rozwiązań backendowych dla aplikacji opartych o sztuczną inteligencję.",
+      "requirements": [
+        "Python",
+        "FastAPI / Django",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Event Manager",
+      "company": "PartyPro",
+      "location": "Wrocław",
+      "salary": 7500,
+      "type": "Pełny etat",
+      "category": "marketing",
+      "experience": "mid",
+      "phone": "525111222",
+      "description": "Organizacja wydarzeń promocyjnych, targów branżowych i konferencji dla naszych kluczowych klientów.",
+      "requirements": [
+        "Doświadczenie w eventach",
+        "Prawo jazdy kat. B",
+        "Zdolności negocjacyjne"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Techniczny Konsultant Wsparcia",
+      "company": "SaaS Provider",
+      "location": "Zdalna",
+      "salary": 6500,
+      "type": "Zdalna",
+      "category": "obsluga-klienta",
+      "experience": "mid",
+      "phone": "626222333",
+      "description": "Rozwiązywanie problemów technicznych użytkowników naszej platformy B2B na drugiej linii wsparcia.",
+      "requirements": [
+        "Zrozumienie działania API",
+        "Angielski B2",
+        "Doświadczenie w IT Helpdesk"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Tester Manualny (QA)",
+      "company": "GameDev Studio",
+      "location": "Katowice",
+      "salary": 5500,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "junior",
+      "phone": "727333444",
+      "description": "Testowanie nowych funkcjonalności w naszych grach mobilnych. Raportowanie błędów w systemie Jira.",
+      "requirements": [
+        "Spostrzegawczość",
+        "Pasja do gier",
+        "Podstawy ISTQB (mile widziane)"
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Email Marketing Specialist",
+      "company": "Mailing Experts",
+      "location": "Poznań",
+      "salary": 6000,
+      "type": "Pełny etat",
+      "category": "marketing",
+      "experience": "mid",
+      "phone": "828444555",
+      "description": "Tworzenie i wysyłka newsletterów, segmentacja baz danych oraz automatyzacja ścieżek mailowych.",
+      "requirements": [
+        "Mailchimp / Freshmail",
+        "Znajomość HTML/CSS",
+        "Copywriting"
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Dyspozytor Infolinii",
+      "company": "Taxi Express",
+      "location": "Warszawa",
+      "salary": 5000,
+      "type": "Pełny etat",
+      "category": "obsluga-klienta",
+      "experience": "junior",
+      "phone": "929555666",
+      "description": "Odbieranie zgłoszeń od klientów, przypisywanie kierowców i monitorowanie realizacji kursów.",
+      "requirements": [
+        "Dobra dykcja",
+        "Wielozadaniowość",
+        "Szybkie pisanie na klawiaturze"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Mobile App Developer (Flutter)",
+      "company": "Appify",
+      "location": "Zdalna",
+      "salary": 13000,
+      "type": "Zdalna",
+      "category": "it",
+      "experience": "mid",
+      "phone": "535666777",
+      "description": "Rozwój naszej flagowej aplikacji mobilnej dostępnej na iOS i Android. Praca w technologii Flutter.",
+      "requirements": [
+        "Dart & Flutter",
+        "Znajomość wzorców projektowych",
+        "Praca z REST API"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Specjalista ds. PR",
+      "company": "Publicity",
+      "location": "Kraków",
+      "salary": 8000,
+      "type": "Pełny etat",
+      "category": "marketing",
+      "experience": "senior",
+      "phone": "636777888",
+      "description": "Budowanie pozytywnego wizerunku firmy w mediach, pisanie informacji prasowych i kontakt z dziennikarzami.",
+      "requirements": [
+        "Kontakty w mediach",
+        "Doskonała polszczyzna",
+        "Doświadczenie w PR korporacyjnym"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Starszy Konsultant Infolinii",
+      "company": "Bank Nowoczesny",
+      "location": "Gdańsk",
+      "salary": 6500,
+      "type": "Pełny etat",
+      "category": "obsluga-klienta",
+      "experience": "senior",
+      "phone": "737888999",
+      "description": "Obsługa kluczowych klientów banku, doradztwo w zakresie produktów finansowych i rozwiązywanie trudnych spraw.",
+      "requirements": [
+        "Doświadczenie w bankowości",
+        "Wysoka kultura osobista",
+        "Certyfikat KNF (mile widziany)"
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Scrum Master",
+      "company": "Agile IT",
+      "location": "Wrocław",
+      "salary": 12000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "mid",
+      "phone": "838999000",
+      "description": "Wspieranie dwóch zespołów deweloperskich w codziennej pracy zgodnie z ramami metodyki Scrum.",
+      "requirements": [
+        "Certyfikat PSM I",
+        "Zdolności facylitacyjne",
+        "Asertywność"
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Content Video Creator",
+      "company": "Vloggers",
+      "location": "Warszawa",
+      "salary": 6500,
+      "type": "Pół etatu",
+      "category": "marketing",
+      "experience": "junior",
+      "phone": "939000111",
+      "description": "Nagrywanie, montaż i publikacja materiałów wideo na kanał YouTube naszej firmy.",
+      "requirements": [
+        "Obsługa kamery/aparatu",
+        "Adobe Premiere Pro",
+        "Znajomość YouTube Studio"
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Koordynator ds. Satysfakcji Klienta",
+      "company": "Happy Client",
+      "location": "Zdalna",
+      "salary": 7000,
+      "type": "Zdalna",
+      "category": "obsluga-klienta",
+      "experience": "mid",
+      "phone": "545111222",
+      "description": "Badanie poziomu NPS, analizowanie feedbacku od użytkowników i proponowanie zmian w procesach obsługi.",
+      "requirements": [
+        "Analiza danych",
+        "Narzędzia ankietowe",
+        "Proaktywność"
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Cybersecurity Specialist",
+      "company": "SafeNet",
+      "location": "Warszawa",
+      "salary": 16000,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "senior",
+      "phone": "646222333",
+      "description": "Monitorowanie sieci pod kątem zagrożeń, przeprowadzanie audytów bezpieczeństwa i testów penetracyjnych.",
+      "requirements": [
+        "Znajomość protokołów sieciowych",
+        "CEH / CISSP",
+        "Doświadczenie w testach pen"
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Stażysta w Dziale Marketingu",
+      "company": "StartUp Vision",
+      "location": "Kraków",
+      "salary": 3500,
+      "type": "Pół etatu",
+      "category": "marketing",
+      "experience": "junior",
+      "phone": "747333444",
+      "description": "Pomoc w bieżących zadaniach działu, reasearch rynku, przygotowywanie prostych grafik do postów.",
+      "requirements": [
+        "Chęć do nauki",
+        "Podstawy Canvy",
+        "Zainteresowanie marketingiem"
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Lider Zmiany Helpdesk",
+      "company": "IT Support 24/7",
+      "location": "Katowice",
+      "salary": 7500,
+      "type": "Pełny etat",
+      "category": "obsluga-klienta",
+      "experience": "senior",
+      "phone": "848444555",
+      "description": "Zarządzanie pracą zespołu na zmianie, eskalacja poważnych awarii, dbanie o jakość obsługi zgłoszeń L1.",
+      "requirements": [
+        "Doświadczenie na Helpdesku",
+        "Gotowość do pracy zmianowej",
+        "ITIL Foundation"
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Administrator Baz Danych",
+      "company": "Data Center PL",
+      "location": "Poznań",
+      "salary": 14500,
+      "type": "Pełny etat",
+      "category": "it",
+      "experience": "senior",
+      "phone": "949555666",
+      "description": "Utrzymanie wydajności baz danych Oracle i MS SQL. Tworzenie kopii zapasowych i optymalizacja zapytań.",
+      "requirements": [
+        "Oracle DB",
+        "MS SQL Server",
+        "Optymalizacja wydajności"
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Specjalista ds. Badań Rynkowych",
+      "company": "Market Insights",
+      "location": "Zdalna",
+      "salary": 8000,
+      "type": "Zdalna",
+      "category": "marketing",
+      "experience": "mid",
+      "phone": "555666777",
+      "description": "Projektowanie i realizacja badań rynkowych, analiza konkurencji i tworzenie rekomendacji dla klientów.",
+      "requirements": [
+        "SPSS / R",
+        "Doświadczenie w badaniach ilościowych",
+        "Tworzenie prezentacji"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "jobId": "10",
+      "name": "test",
+      "email": "test@gmai.com",
+      "phone": "555555555",
+      "date": "2026-05-12T12:07:11.111Z",
+      "id": "iO8K2vUcIOU"
+    },
+    {
+      "jobId": "3",
+      "name": "ttt",
+      "email": "tt@g.g",
+      "phone": "555555555",
+      "date": "2026-05-12T12:08:43.694Z",
+      "id": "lNaYVc1uho8"
+    },
+    {
+      "jobId": "1",
+      "name": "test test",
+      "email": "test@gmail.com",
+      "phone": "666666666",
+      "date": "2026-05-12T12:13:48.638Z",
+      "id": "hh45kwScInI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
