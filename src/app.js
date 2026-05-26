@@ -21,8 +21,12 @@ let state = {
 
 state.favorites = state.favorites.map(String);
 
+
 window.addEventListener('hashchange', handleRoute);
-window.addEventListener('DOMContentLoaded', handleRoute);
+window.addEventListener('DOMContentLoaded', () => {
+  handleRoute();
+  setupGlobalNavListener();
+});
 
 function handleRoute() {
   const hash = window.location.hash || '#home';
@@ -103,8 +107,6 @@ async function renderHome() {
 async function renderJobDetailsView(id) {
   try {
     const job = await fetchJobDetails(id);
-
-
     const jobIdStr = String(job.id);
     const isFav = state.favorites.includes(jobIdStr);
     const savedForm = JSON.parse(localStorage.getItem(`draft_${job.id}`)) ||
@@ -112,7 +114,7 @@ async function renderJobDetailsView(id) {
 
     appContainer.innerHTML = `
             <div class="job-details">
-                <button class="back-btn" onclick="window.history.back()">⬅ Powrót</button>
+                <button class="back-btn">⬅ Powrót</button>
                 <h2>${job.title} w ${job.company}</h2>
                 <div class="tags">
                     <span>📍 ${job.location}</span>
@@ -124,8 +126,8 @@ async function renderJobDetailsView(id) {
                 <ul>${
         job.requirements.map(req => `<li>${req}</li>`).join('')}</ul>
                 
-                <button id="fav-btn" class="btn ${
-        isFav ? 'btn-fav' : ''}" onclick="toggleFavorite('${jobIdStr}')">
+                <button id="fav-btn" class="btn fav-toggle-btn ${
+        isFav ? 'btn-fav' : ''}" data-id="${jobIdStr}">
                     ${isFav ? '💔 Usuń z ulubionych' : '❤️ Dodaj do ulubionych'}
                 </button>
 
@@ -214,8 +216,8 @@ function renderJobList(showPagination = true) {
                 <span class="location">📍 ${job.location}</span>
                 <span class="salary">💰 ${job.salary} zł</span>
             </div>
-            <button class="btn" onclick="window.location.hash='#job/${
-                                 job.id}'">Zobacz ofertę</button>
+            <button class="btn view-job-btn" data-id="${
+                                 job.id}">Zobacz ofertę</button>
         </div>
     `).join('');
 
@@ -239,14 +241,6 @@ function renderPagination() {
                                   ''}" data-page="${i}">${i}</button>`;
   }
   pagContainer.innerHTML = html;
-
-  pagContainer.querySelectorAll('.page-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      state.currentPage = Number(e.target.dataset.page);
-      renderJobList();
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-  });
 }
 
 function setupFilterListeners() {
@@ -280,10 +274,8 @@ function setupPaginationListeners() {
   }
 }
 
-
-window.toggleFavorite = function(jobId) {
+function toggleFavorite(jobId, favBtn) {
   const idStr = String(jobId);
-  const favBtn = document.getElementById('fav-btn');
 
   if (state.favorites.includes(idStr)) {
     state.favorites = state.favorites.filter(id => id !== idStr);
@@ -302,10 +294,11 @@ window.toggleFavorite = function(jobId) {
   }
 
   localStorage.setItem('favs', JSON.stringify(state.favorites));
-};
+}
 
 function setupFormHandling(jobId) {
   const form = document.getElementById('apply-form');
+  if (!form) return;
   const inputs = form.querySelectorAll('input');
 
   inputs.forEach(input => {
@@ -345,6 +338,43 @@ function setupFormHandling(jobId) {
       showToast(
           'Nie udało się wysłać aplikacji. Brak połączenia z API.', 'error');
       console.error(error);
+    }
+  });
+}
+
+
+appContainer.addEventListener('click', (e) => {
+  if (e.target.classList.contains('back-btn')) {
+    window.history.back();
+    return;
+  }
+
+  const viewJobBtn = e.target.closest('.view-job-btn');
+  if (viewJobBtn) {
+    window.location.hash = `#job/${viewJobBtn.dataset.id}`;
+    return;
+  }
+  const favBtn = e.target.closest('.fav-toggle-btn');
+  if (favBtn) {
+    toggleFavorite(favBtn.dataset.id, favBtn);
+    return;
+  }
+  if (e.target.classList.contains('page-btn')) {
+    state.currentPage = Number(e.target.dataset.page);
+    renderJobList();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    return;
+  }
+});
+
+function setupGlobalNavListener() {
+  const nav = document.querySelector('nav[aria-label="Główna nawigacja"]');
+  if (!nav) return;
+
+  nav.addEventListener('click', (e) => {
+    const navBtn = e.target.closest('button');
+    if (navBtn && navBtn.dataset.target) {
+      window.location.hash = navBtn.dataset.target;
     }
   });
 }
